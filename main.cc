@@ -27,10 +27,10 @@ FuncGraphPtr CreateConv2DGraph(const tensor::TensorPtr &input, const tensor::Ten
   auto weight_parameter = CreateAndAddWeightParameter(graph, weight, "w");
   // Create Conv2D node
   std::unordered_map<std::string, ValuePtr> attrs;
-  attrs["group"] = MakeValue(1);
+  attrs["group"] = MakeValue(int64_t(1));
   attrs["stride"] = MakeValue(std::vector<int64_t>({1, 1, 1, 1}));
   attrs["dilation"] = MakeValue(std::vector<int64_t>({1, 1, 1, 1}));
-  attrs["pad_mode"] = MakeValue(2);
+  attrs["pad_mode"] = MakeValue(int64_t(2));
   attrs["pad_list"] = MakeValue(std::vector<int64_t>({0, 0, 0, 0}));
   auto conv2d = CreateCNode(graph, {CreatePrimitiveValueNode("Conv2D"), input_parameter, weight_parameter}, attrs);
   conv2d->set_abstract(
