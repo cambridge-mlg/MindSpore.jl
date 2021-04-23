@@ -18,6 +18,7 @@ FuncGraphPtr CreateTensorAddGraph(const tensor::TensorPtr &a, const tensor::Tens
   return graph;
 }
 
+// The example of constructing an simple conv2D graph.
 FuncGraphPtr CreateConv2DGraph(const tensor::TensorPtr &input, const tensor::TensorPtr &weight,
                                const std::vector<int64_t> &conv2d_shape) {
   auto graph = CreateFuncGraph();
