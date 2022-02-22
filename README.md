@@ -7,7 +7,6 @@ This repository code is an example of the MindSpore C++ interface. In the exampl
 
 #### Instructions
 
-##### 样例编译与执行步骤：
 
 1、To compile this example, you need to link the shared library of MindSpore. You need to modify the `mindspore/ccsrc/CMakeLists.txt` file in the root directory of the MindSpore library, and set `_c_expression` to shared.
 ![Enter image description](https://images.gitee.com/uploads/images/2021/0423/152834_7fe751ba_6574899.png "screenshot.png")
