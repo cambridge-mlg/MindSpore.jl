@@ -1,5 +1,7 @@
 # ms_cxx_graph_api_example
 
+[Link](https://gitee.com/ginfung/ms_cxx_graph_api_example) to the original repo with Chinese README. 
+
 #### Introduction 
 This repository code is an example of the MindSpore C++ interface. In the example, the C++ interface of MindSpore is used for further encapsulation, which is used to construct the front-end `func_graph`, and call the back-end graph compilation interface and graph execution interface. Finally, it can be executed by compiling the example in `main.cc`.
 
