@@ -1,0 +1,10 @@
+name = "GraphCompiler"
+uuid = "a5d4efaa-d9a2-40b1-ade3-88b9a6350cae"
+authors = ["Ross Viljoen <ross@viljoen.co.uk> and contributors"]
+version = "0.1.0"
+
+[deps]
+CodeInfoTools = "bc773b8a-8374-437a-b9f2-0e9785855863"
+
+[compat]
+julia = "1.6"
