@@ -1,0 +1,5 @@
+name = "MindSpore"
+
+[deps]
+CodeInfoTools = "bc773b8a-8374-437a-b9f2-0e9785855863"
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"

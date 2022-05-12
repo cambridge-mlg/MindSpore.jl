@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+export CONDA_ENV_PATH=/home/ross/miniconda3/envs/mindspore_py37
+export MS_PATH=/home/ross/msproj/mindspore
+export MS_LIB_PATH=/home/ross/msproj/mindspore/build/mindspore/.mslib
+
+export LIBRARY_PATH=${MS_PATH}/mindspore/lib:${CONDA_ENV_PATH}/lib:${LIBRARY_PATH}
+export LD_LIBRARY_PATH=${LIBRARY_PATH}:${LD_LIBRARY_PATH}
+
+julia --project=@. -i
